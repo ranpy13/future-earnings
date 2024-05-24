@@ -1,112 +1,63 @@
 import Image from "next/image";
+import icon1 from "../../public/icon1.svg"
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <div className="z-10 w-full max-w-7xl items-center justify-between lg:flex flex-row">
+        <div>
+          <h1 className="text-5xl">How does this tool Works?</h1>
+          <p className="max-w-3xl font-normal font-sans text-2xl mt-8 leading-10">This tool is a comprehensive data-driven tool designed to help students understand the real return on investment (ROI) for studying abroad. It takes into account various factors, including the opportunity cost, actual costs, and potential future earnings, to provide a detailed analysis.        </p>
+        </div>
+        <div>
+          <Image src="https://s3-alpha-sig.figma.com/img/4400/2942/5ea5587c169ec4d135f1f582f9a74966?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DUEzuredN7kAQI244Im4bqcJzak1gM9vkyDo7UG-smMNt3taGtZU5qZUgl16SyL76hYrbctGKfMnbxVzK0zZajTN5z9tLlDd8H8Hw3Vj9vRKmDNieE9FlDLvKfM~jo1TB0S1T4C-XmAe7NW8k0HF3MnF9sFJTUgn-JRUeofopfAxPgya~HE3V1j23EL3~IYM24mHzQS14KbSYYyer5HFXZxVaPFhnN6ENp974aLaL7Iqev6-tGfKpcD3TbNev7uIiKNNroWkdnmAI5NSDzUK48B92lhLiWURlgOQhJLoMvcJUY70xMjbxnmEwk9mlAOy532sQk1UgXbkJ4WyNBunUg__" alt="some image" width={450} height={300} />
+        </div>
+      </div>
+      
+      <div className="text-center pt-12 my-10">
+        <h1 className="text-4xl my-12">Input Parameters</h1>
+        <div className="grid xl:grid-cols-3 lg:grid-cols-2 gap-y-[120px] gap-x-[65px]">
+          <div className="min-w-[400px] min-h-[160px] bg-gray-200 rounded-lg p-4 relative">
+            <h3 className="text-center text-xl">Country: </h3>
+            <Image src={icon1} alt="some image" width={40} height={40} 
+              className="absolute right-4 top-4" />
+            <p className="font-sans pt-7 text-left px-4 text-lg">The tool allows you to select the country where you plan to study.</p>
+          </div>
+          <div className="min-w-[400px] min-h-[160px] bg-gray-200 rounded-lg p-4 relative">
+            <h3 className="text-center text-xl">Loan Amount: </h3>
+            <Image src={icon1} alt="some image" width={40} height={40} 
+              className="absolute right-4 top-4" />
+            <p className="font-sans pt-7 text-left px-4 text-lg">You can specify the amount of loan you will take for your education abroad.</p>
+          </div>
+          <div className="min-w-[400px] min-h-[160px] bg-gray-200 rounded-lg p-4 relative">
+            <h3 className="text-center text-xl">Expected Salary: </h3>
+            <Image src={icon1} alt="some image" width={40} height={40} 
+              className="absolute right-4 top-4" />
+            <p className="font-sans pt-7 text-left px-4 text-lg">The salary that one can expect after course completion.</p>
+          </div>
+          <div className="min-w-[400px] min-h-[160px] bg-gray-200 rounded-lg p-4 relative">
+            <h3 className="text-center text-xl">Rate of Interest: </h3>
+            <Image src={icon1} alt="some image" width={40} height={40} 
+              className="absolute right-4 top-4" />
+            <p className="font-sans pt-7 text-left px-4 text-lg">Enter the interest rate associated with your education loan.</p>
+          </div>
+          <div className="min-w-[400px] min-h-[160px] bg-gray-200 rounded-lg p-4 relative">
+            <h3 className="text-center text-xl">Course Duration: </h3>
+            <Image src={icon1} alt="some image" width={40} height={40} 
+              className="absolute right-4 top-4" />
+            <p className="font-sans pt-7 text-left px-4 text-lg">Specify the duration of the course you plan to pursue abroad.</p>
+          </div>
+          <div className="min-w-[400px] min-h-[160px] bg-gray-200 rounded-lg p-4 relative">
+            <h3 className="text-center text-xl">Course Field: </h3>
+            <Image src={icon1} alt="some image" width={40} height={40} 
+              className="absolute right-4 top-4" />
+            <p className="font-sans pt-7 text-left px-4 text-lg">The output will depend on the field of your course.</p>
+          </div>
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="my-24">
+        <h1 className="text-center text-3xl">Assumptions and Calculations</h1>
       </div>
     </main>
   );
